@@ -1,0 +1,231 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #fff;
+	color: #000;
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+a {
+	color: #262626;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.container {
+	/* if width is less than 1140px,it will take 90% of the screen */
+	width: 90%;
+	max-width: 1140px;
+	margin: auto;
+}
+
+/* NAV */
+
+.main-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	font-size: 13px;
+	padding: 20px 0;
+	/* background-color: gray; */
+}
+
+.main-nav ul {
+	display: flex;
+}
+
+.main-nav ul li {
+	padding: 0 10px;
+}
+
+.main-nav ul li a {
+	padding-bottom: 2px;
+}
+
+.main-nav ul li a:hover {
+	border-bottom: 2px solid gray;
+}
+
+.main-nav .logo {
+	width: 110px;
+}
+
+.main-nav ul.main-menu {
+	/* background-color: red; */
+	flex: 1;
+	margin-left: 20px;
+}
+
+/* Showcase button */
+.btn {
+	cursor: pointer;
+	display: inline-block;
+	border: 0;
+	font-weight: bold;
+	padding: 10px 20px;
+	background: #262626;
+	color: #fff;
+}
+
+.btn:hover {
+	opacity: 0.8;
+}
+/* ShowCase */
+
+.showcase {
+	width: 100%;
+	height: 400px;
+	background: url('./image/slide1.png') no-repeat center center/cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: flex-end;
+	padding-bottom: 50px;
+	margin: 20px 0;
+}
+
+.showcase h2,
+.showcase p {
+	margin-bottom: 10px;
+}
+
+.showcase .btn {
+	margin-top: 20px;
+}
+
+/* Home card */
+
+.home-card {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+	margin-bottom: 40px;
+}
+
+.home-card img {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.home-card h3 {
+	margin-bottom: 5px;
+}
+
+.home-card a {
+	/* dont forget a is inline element */
+	display: inline-block;
+	padding-top: 10px;
+	color: #0067b8;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.home-card a:hover i {
+	margin-left: 10px;
+}
+
+/* x-box */
+
+.xbox {
+	width: 100%;
+	height: 350px;
+	background: url('image/xbox.png') no-repeat center center/cover;
+	margin-bottom: 20px;
+}
+
+.xbox .content {
+	/* border: 1px solid red; */
+	width: 40%;
+	padding: 50px 0 0 30px;
+}
+
+.xbox p,
+.carbon p {
+	margin: 10px 0 20px;
+}
+
+/* Carbon text dark */
+.dark {
+	color: #fff;
+}
+
+.dark .btn {
+	background: #f4f4f4;
+	color: #333;
+}
+/* Carbon */
+
+.carbon {
+	width: 100%;
+	height: 350px;
+	background: url("image/carbon.jpg") no-repeat center center/cover;
+	margin-bottom: 20px;
+}
+
+.carbon .content {
+	width: 55%;
+	padding: 100px 0 0 50px;
+}
+
+/* follow  */
+
+.follow {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.follow * {
+	margin-right: 10px;
+}
+
+/* link */
+
+.links {
+	background: #e2e1e1;
+	color: #616161;
+	padding: 35px 0;
+	font-size: 13px;
+}
+
+.links-inner {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	justify-content: center;
+}
+
+.links li {
+	line-height: 2.8;
+}
+
+/* footer */
+
+.footer {
+	background: #e2e1e1;
+	color: #616161;
+	font-size: 13px;
+	padding: 20px 0;
+}
+
+.footer-inner {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
